@@ -7,6 +7,7 @@ import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 import { Button } from "@/components/ui/button";
 import { useApiMutation } from "@/hooks/use-api-mutations";
+import { toast } from "sonner";
 
 export const EmptyBoards = () => {
   const router = useRouter();
@@ -18,6 +19,10 @@ export const EmptyBoards = () => {
     mutate({
       orgId: organization.id,
       title: "Untitled"
+    })
+    .then((id)=>{
+      toast.success("Board creaed")
+      //TODO redirect to board/id
     })
   }
 
