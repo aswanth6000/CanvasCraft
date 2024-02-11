@@ -22,7 +22,7 @@ export const EmptyBoards = () => {
     })
     .then((id)=>{
       toast.success("Board creaed")
-      //TODO redirect to board/id
+      router.push(`/board/${id}`)
     })
   }
 
