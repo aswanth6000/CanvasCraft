@@ -48,7 +48,7 @@ const BoardCard = ({
     const {
       mutate: onUnFavourite,
       pending: pendingUnFavourite
-    } = useApiMutation(api.board.unFavorite)
+    } = useApiMutation(api.board.unfavorite)
 
     const toogleFavourite = () =>{
       if(isFavorite){

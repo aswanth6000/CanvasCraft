@@ -139,7 +139,7 @@ export const favorite = mutation({
 });
 
 
-export const unFavorite = mutation({
+export const unfavorite = mutation({
   args: { id: v.id("boards") },
   handler: async (ctx, args) => {
     const identity = await ctx.auth.getUserIdentity();
@@ -156,7 +156,7 @@ export const unFavorite = mutation({
 
     const userId = identity.subject;
 
-    const existingFavorite = await ctx.db  //deleting favourite from favourite table as well as boards table
+    const existingFavorite = await ctx.db
       .query("userFavorites")
       .withIndex("by_user_board", (q) => 
         q
