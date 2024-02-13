@@ -1,8 +1,22 @@
-import { Canvas } from "../_components/canvas"
+import { Room } from "@/components/room";
 
-const BoardIdPage = () => {
+import { Canvas } from "../_components/canvas";
+import { Loading } from "../_components/loading";
+
+interface BoardIdPageProps {
+  params: {
+    boardId: string;
+  };
+};
+
+const BoardIdPage = ({
+  params,
+}: BoardIdPageProps) => {
   return (
-    <Canvas/>
-  )
-}
-export default BoardIdPage
+    <Room roomId={params.boardId} >
+      <Canvas boardId={params.boardId} />
+    </Room>
+  );
+};
+
+export default BoardIdPage;
