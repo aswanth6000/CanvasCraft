@@ -22,7 +22,7 @@ export const Room = ({
     <RoomProvider 
       id={roomId} 
       initialPresence={{
-
+        cursor: null
       }}
 
     >
