@@ -16,8 +16,8 @@ interface ToolbarProps {
   setCanvasState: (newState: CanvasState) => void;
   undo: () => void;
   redo: () => void;
-  canUndo: any;
-  canRedo: any;
+  canUndo: boolean;
+  canRedo: boolean;
 }
 
 export const Toolbar = ({
