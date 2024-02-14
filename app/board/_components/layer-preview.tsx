@@ -6,6 +6,7 @@ import { memo } from "react";
 import { LayerType } from "@/types/canvas";
 import { useStorage } from "@/liveblocks.config";
 import { Rectangle } from "./rectangle";
+import { Ellipse } from "./ellipse";
 
 // import { Text } from "./text";
 // import { Ellipse } from "./ellipse";
@@ -61,15 +62,15 @@ export const LayerPreview = memo(({
     //       selectionColor={selectionColor}
     //     />
     //   );
-    // case LayerType.Ellipse:
-    //   return (
-    //     <Ellipse
-    //       id={id}
-    //       layer={layer}
-    //       onPointerDown={onLayerPointerDown}
-    //       selectionColor={selectionColor}
-    //     />
-    //   );
+    case LayerType.Ellipse:
+      return (
+        <Ellipse
+          id={id}
+          layer={layer}
+          onPointerDown={onLayerPointerDown}
+          selectionColor={selectionColor}
+        />
+      );
     case LayerType.Rectangle:
       return (
         <Rectangle
