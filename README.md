@@ -4,7 +4,7 @@
 
 Welcome to CanvasCraft, your go-to collaborative whiteboarding platform! CanvasCraft is built on the principles of creativity, teamwork, and innovation. Whether you're a designer, project manager, or creative thinker, CanvasCraft provides a dynamic space to turn your ideas into reality.
 
-![Project Screenshot](https://res.cloudinary.com/dihrwghx2/image/upload/v1707900855/canvas%20craft/vnd9ucednngt6cogy0bs.png)
+![Project Screenshot](https://res.cloudinary.com/dihrwghx2/image/upload/v1707904255/canvas%20craft/oj79azhfdzx4tsmvpmdm.gif)
 
 ## **Key Features:**
 
