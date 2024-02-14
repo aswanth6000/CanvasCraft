@@ -38,7 +38,7 @@ export const Info = ({
   
 
   const data = useQuery(api.board.get, {
-    id: 'j5710j2a9kk7fj7k34xnjjwre96k8t1p' as Id<"boards">,
+    id: boardId as Id<"boards">,
   });
 
   if (!data) return <InfoSkeleton />;
